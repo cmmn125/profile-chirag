@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Learning</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Roboto:wght@500;900&display=swap"rel="stylesheet">
+
+    <!-- CDN Link Font Awesome -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* ID Selector */
         #Java{ color: cadetblue;
@@ -12,7 +19,10 @@
         }
         /* Class Selector */
         .nonDeveloper{color: chocolate; 
-        font-weight: bold;}
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
 
         /* Combination Selector */
         /* #Java,.nonDeveloper{ background-color: cornflowerblue;} */
@@ -29,20 +39,46 @@
     color: rgb(243, 164, 16);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#friends li{
+    list-style-type: upper-roman;
+}
+.mainHeading{
+    font-family: 'Poppins', sans-serif;
+}
+.friends{font-family: 'Roboto', sans-serif;
+
+}
+
     </style>
 </head>
 <body>
-    <h2 style="color: orange; background-color: grey;"> Professional Summary</h2>
-    <p>I am UI Developer</p>
-    <p id="Java">I am Java Developer</p>
+    <h2 class="mainHeading" style="color: orange; background-color: grey;"> Professional Summary</h2>
+    <p class="nonDeveloper">I am UI Developer</p>
+    <p class="nonDeveloper">I am Java Developer</p>
     <p class="nonDeveloper">I am Test Engineer</p>
     <p class="nonDeveloper"> I am Support Engineer</p>
     <h2>
         Skills
-    </h2>
-    <p style="font-weight: bolder ;">HTML and CSS</p>
-    <P>JavaScript</P>
-    <p>I am very good in <span id="web">  Web Development</span> and DSA </p>
-    <p id="learning"> I am learning CSS and enjoying too</p>
+    </h2 class="mainHeading">
+    <p class="nonDeveloper" style="font-weight: bolder ;">HTML and CSS</p>
+    <P class="nonDeveloper">JavaScript</P>
+    <p class="nonDeveloper">I am very good in <span id="web">  Web Development</span> and DSA </p>
+    <p  class="nonDeveloper"> I am learning CSS and enjoying too</p>
+   
+
+    <h2 class="mainHeading"> List of Friends</h2>
+    <ol class="friends">
+        <li> jenny</li>
+        <li>bill</li>
+        <li>steve</li>
+        <li>elon</li>
+    </ol>
+    <h2 class="mainHeading"> List of Books</h2>
+    <ol class="friends">
+        <li>Autobiography of yogi</li>
+        <li> Ikagai</li>
+        <li>Atomic Habit</li>
+        <li>Seven Habit</li>
+    </ol>
 </body>
 </html>

@@ -4,32 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <style>
+    <!-- CDN LINK FONT AWESOME -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CDN LINK -Google Font families -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Roboto:wght@500;900&display=swap"rel="stylesheet">
+<style>
     header{
         color: chocolate;
         background-color: silver; 
     }
+    nav a{
+        margin-right: 40px;
+        text-decoration: none;
+        font-family: 'Concert One' , sans-serif;
+    }
+    header span{
+        margin: 15px;
+    }
+    header {
+        text-align: right;
+    }
+    #homeLink{
+        margin-left: 10px;  
+    }
+
+    
+    footer span{
+        text-decoration: none;
+        margin: 20px;
+    }
+    footer{
+        text-align: right;
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    
+    
     </style>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header><span> Name: chirag mahajan &nbsp;&nbsp;&nbsp;&nbsp;Mobile:7038007695 &nbsp;&nbsp;&nbsp;&nbsp;Email:chiragm908@gmail.com </span></header> <hr>
+    <header>
+       <img src="assets/chirag.png" alt="chirag">
+        <span><i class="fa fa-user" aria-hidden="true"></i> chirag mahajan</span>
+        <span></span> <i class="fa fa-phone" aria-hidden="true"></i>7038007695 </span>
+        <span><i class="fa fa-envelope" aria-hidden="true"></i>chiragm908@gmail.com </span></header> <hr>
 <!-- Navigation Section -->
 <nav>
-    <a href="home.html" target="mainFrame"> HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="techStack.html" target="mainFrame"> TECH STACK</a>&nbsp;&nbsp;&nbsp;&nbsp;   
-    <a href="project.html" target="mainFrame"> PROJECT</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="education.html" target="mainFrame"> EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="others.html" target="mainFrame"> OTHERS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="home.html" target="mainFrame" id="homeLink"> HOME</a>
+    <a href="techStack.html" target="mainFrame"> TECH STACK</a> 
+    <a href="project.html" target="mainFrame"> PROJECT</a>
+    <a href="education.html" target="mainFrame"> EDUCATION</a>
+    <a href="others.html" target="mainFrame"> OTHERS</a>
 </nav> <hr>
     <!-- Body Section -->
     <iframe src="home.html" name="mainFrame" frameborder="0" width="900px" height="450px"></iframe>
     <!-- Footer Section -->
    <footer>
-    <a href="">Linked IN</a>
-    <a href="">GitHub</a>
-    <a href="">Naukri</a>
+   <span><a href=""><i class="fa fa-linkedin-square"aria-hidden="true"></i></a> </span> 
+   <span><a href=""><i class="fa fa-github-square"aria-hidden="true"></i></a></span>  
+   <span><a href=""><i class="fa fa-laptop" aria-hidden="true"></i></a></span> 
    </footer>
 </body>
 </html>
