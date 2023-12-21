@@ -18,6 +18,7 @@
 }
 .skills{
     font-family: 'Roboto', sans-serif;
+
 }
 #text{
     color: red;
@@ -26,8 +27,23 @@
 #list2{
     text-decoration: underline;
 }
+#list4{
+    background-color: orange;
+}
+#list6{
+    background-color: orange;
+}
+ul li{ list-style-type: none;
 
-ul li{ list-style-type: circle;}
+}
+#emoji li::before{
+    content: "👉🏻";
+}
+#emoji {
+    font-family: 'Roboto', sans-serif;
+
+}
+
 
     </style>
 </head>
@@ -35,7 +51,7 @@ ul li{ list-style-type: circle;}
     <h2 class="mainHeading"> Career Objectives</h2>
     <p class="skills" >TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATION GROWTH </p>
     <h2 class="mainHeading"> Professional Summary</h2>
-    <ul class="skills">
+    <ul id="emoji">
         <li>Having 5 year of experience in developing single page web applications using <span id="text">Angular8</span> 13,HTML5,CSS3,Bootstrap5,JavaScript,ES6,TypeScript</li>
         <li id="list1">Experience on working with version control system-GIT and GitHub</li>
         <li id="list2">Experience working with JIRA for user stories and bug tracking</li>
